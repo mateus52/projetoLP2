@@ -1,0 +1,15 @@
+package enums;
+
+public enum Secao {
+	HIGIENE,
+	LIMPEZA,
+	BEBIDAS,
+	CEREAIS,
+	LATICINIOS,
+	MASSAS,
+	LATARIAS,
+	CONSERVAS,
+	CONGELADOS,
+	DOCES,
+	CHOCOLATE
+}
