@@ -1,5 +1,6 @@
 package entity;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -12,7 +13,7 @@ public class Estoque {
 	private String lote;
 	private Secao secao;
 	
-	private List<Produto> listaprodutos;
+	private List<Produto> listaprodutos = new ArrayList<>();
 
 	public Estoque(int quantidade, Date validade, String lote, Secao secao) {
 		this.quantidade = quantidade;
