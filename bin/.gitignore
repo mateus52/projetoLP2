@@ -1,3 +1,4 @@
-/application/
-/entity/
-master
+/enums/
+/model/
+/database/
+
