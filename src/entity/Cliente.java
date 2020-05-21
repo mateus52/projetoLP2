@@ -1,12 +1,21 @@
 package entity;
 
-public class Cliente {
-	
+import java.util.Date;
+
+public class Cliente extends Pessoa{
 	private String cpf;
 	private String email;
 	private String telefone;
 	private String senha;
 	
+	public Cliente(String nome, Date dataNasc, String cpf, String email, String telefone, String senha) {
+		super(nome, dataNasc);
+		this.cpf = cpf;
+		this.email = email;
+		this.telefone = telefone;
+		this.senha = senha;
+	}
+
 	public boolean validarCpf(String cpf ) {
 		return true;
 	}

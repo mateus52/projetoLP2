@@ -1,13 +1,23 @@
 package entity;
 
+import enums.TipoEndereco;
+
 public class Endereco {
-	
 	private String endereco;
 	private String bairro;
 	private String cidade;
-	private TipoEndereco tipo;
+	private TipoEndereco tipoEndereco;
+	private Cliente cliente;
 	
-	
+	public Endereco(String endereco, String bairro, String cidade, TipoEndereco tipoEndereco, Cliente cliente) {
+		
+		this.endereco = endereco;
+		this.bairro = bairro;
+		this.cidade = cidade;
+		this.tipoEndereco = tipoEndereco;
+		this.cliente = cliente;
+	}
+
 	public String getEndereco() {
 		return endereco;
 	}
@@ -32,11 +42,5 @@ public class Endereco {
 		this.cidade = cidade;
 	}
 	
-	public TipoEndereco getTipo() {
-		return tipo;
-	}
 	
-	public void setTipo(TipoEndereco tipo) {
-		this.tipo = tipo;
-	}
 }
