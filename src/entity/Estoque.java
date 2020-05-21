@@ -1,35 +1,70 @@
-
-
 package entity;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import enums.Secao;
 
 public class Estoque {
-    private String endereco;
-    private String prateleira;
-    private String Setor;
+	
+	private int quantidade;
+	private Date validade;
+	private String lote;
+	private Secao secao;
+	
+	private List<Produto> listaprodutos = new ArrayList<>();
 
-    public String getEndereco() {
-        return endereco;
-    }
+	public Estoque(int quantidade, Date validade, String lote, Secao secao) {
+		this.quantidade = quantidade;
+		this.validade = validade;
+		this.lote = lote;
+		this.secao = secao;
+	}
 
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
-    }
+	public int getQuantidade() {
+		return quantidade;
+	}
 
-    public String getPrateleira() {
-        return prateleira;
-    }
+	public void setQuantidade(int quantidade) {
+		this.quantidade = quantidade;
+	}
 
-    public void setPrateleira(String prateleira) {
-        this.prateleira = prateleira;
-    }
+	public Date getValidade() {
+		return validade;
+	}
 
-    public String getSetor() {
-        return Setor;
-    }
+	public void setValidade(Date validade) {
+		this.validade = validade;
+	}
 
-    public void setSetor(String Setor) {
-        this.Setor = Setor;
-    }
-    
+	public String getLote() {
+		return lote;
+	}
+
+	public void setLote(String lote) {
+		this.lote = lote;
+	}
+
+	public Secao getSecao() {
+		return secao;
+	}
+
+	public void setSecao(Secao secao) {
+		this.secao = secao;
+	}
+
+	public List<Produto> getListaprodutos() {
+		return listaprodutos;
+	}
+
+	public void setListaprodutos(List<Produto> listaprodutos) {
+		this.listaprodutos = listaprodutos;
+	}
+	
+	
+	
+	
+	
+
 }

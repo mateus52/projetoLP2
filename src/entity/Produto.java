@@ -2,61 +2,75 @@ package entity;
 
 public class Produto {
 
+	private String codProduto; // pretendo criar codigo junto com o setor ex: produto de limpeza omo L234 L do setor + sequencia de numero
     private String nomeProduto;
-    private String descrição; // aqui temos uma breve descrição do produto
-    private String marca; // marca do produto 
-    private String codProduto; // pretendo criar codigo junto com o setor ex: produto de limpeza omo L234 L do setor + sequencia de numero
-    private double precoProduto;
-    private int quantidade;
+    private String descricao; // aqui temos uma breve descrição do produto
+    private String preco; // marca do produto 
+    private Fornecedor fornecedor;
+    private Estoque estoque;
+    
+	public Produto(String codProduto, String nomeProduto, String descricao, String preco, Fornecedor fornecedor, Estoque estoque) {
+		this.codProduto = codProduto;
+		this.nomeProduto = nomeProduto;
+		this.descricao = descricao;
+		this.preco = preco;
+		this.fornecedor = fornecedor;
+		this.estoque = estoque;
+	}
 
-    public String getNomeProduto() {
-        return nomeProduto;
-    }
+	public String getCodProduto() {
+		return codProduto;
+	}
 
-    public void setNomeProduto(String nomeProduto) {
-        this.nomeProduto = nomeProduto;
-    }
+	public void setCodProduto(String codProduto) {
+		this.codProduto = codProduto;
+	}
 
-    public String getDescrição() {
-        return descrição;
-    }
+	public String getNomeProduto() {
+		return nomeProduto;
+	}
 
-    public void setDescrição(String descrição) {
-        this.descrição = descrição;
-    }
+	public void setNomeProduto(String nomeProduto) {
+		this.nomeProduto = nomeProduto;
+	}
 
-    public String getMarca() {
-        return marca;
-    }
+	public String getDescricao() {
+		return descricao;
+	}
 
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
 
-    public String getCodProduto() {
-        return codProduto;
-    }
+	public String getPreco() {
+		return preco;
+	}
 
-    public void setCodProduto(String codProduto) {
-        this.codProduto = codProduto;
-    }
+	public void setPreco(String preco) {
+		this.preco = preco;
+	}
 
-    public double getPrecoProduto() {
-        return precoProduto;
-    }
+	public Fornecedor getFornecedor() {
+		return fornecedor;
+	}
 
-    public void setPrecoProduto(double precoProduto) {
-        this.precoProduto = precoProduto;
-    }
+	public void setFornecedor(Fornecedor fornecedor) {
+		this.fornecedor = fornecedor;
+	}
 
-    public int getQuantidade() {
-        return quantidade;
-    }
+	public Estoque getEstoque() {
+		return estoque;
+	}
 
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
-    }
-
+	public void setEstoque(Estoque estoque) {
+		this.estoque = estoque;
+	}
+	
+	
+	
+    
+    
+    
 
     
 
